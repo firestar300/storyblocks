@@ -1,0 +1,34 @@
+@use "sass:math";
+
+// Loading @wordpress/base-styles as they have mixins and other dependencies
+// used within @wordpress/*/src/*.scss
+
+@import "~@wordpress/base-styles/animations";
+@import "~@wordpress/base-styles/breakpoints";
+@import "~@wordpress/base-styles/colors";
+@import "~@wordpress/base-styles/mixins";
+@import "~@wordpress/base-styles/default-custom-properties";
+@import "~@wordpress/base-styles/variables";
+@import "~@wordpress/base-styles/z-index";
+@import "./styles/fonts";
+
+:root {
+    --gray-color-900: #f4f4f4;
+}
+
+html,
+body {
+    box-sizing: border-box;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    -webkit-font-smoothing: antialiased;
+}
+
+iframe {
+    border: none;
+}

@@ -1,0 +1,21 @@
+.sb-block-info {
+    padding: 20px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+    background-color: var(--gray-color-900);
+}
+
+.sb-block-title {
+    margin: 0;
+    font-size: 2.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.sb-block-description {
+    margin: 0 0 10px;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
