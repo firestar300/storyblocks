@@ -5,10 +5,11 @@ import './style.css'
 export default function BlockInfo({ block }) {
   return (
     <div className="sb-block-info">
-      <h2 className="sb-block-title">
+      <div className="sb-block-meta">
         <BlockIcon icon={block.icon} />
-        {block.title}
-      </h2>
+        <span>{block.name}</span>
+      </div>
+      <h2 className="sb-block-title">{block.title}</h2>
       <p className="sb-block-description">{block.description}</p>
     </div>
   )

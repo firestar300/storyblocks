@@ -5,6 +5,18 @@
     background-color: var(--gray-color-900);
 }
 
+.sb-block-meta {
+    display: flex;
+    align-items: center;
+    font-size: .75rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.block-editor-block-icon {
+    margin-right: 10px;
+}
+
 .sb-block-title {
     margin: 0;
     font-size: 2.6rem;
