@@ -9,7 +9,7 @@ export default function BlockExample({ block }) {
     <div className="sb-block-example">
       <EditorStyles />
       <BlockPreview
-        viewportWidth={1000}
+        __experimentalLive={true}
         blocks={getBlockFromExample(block.name, {
           attributes: block.example.attributes,
           innerBlocks: block.example.innerBlocks,
