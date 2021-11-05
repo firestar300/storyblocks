@@ -5,7 +5,6 @@ import { EditorStyles } from '../editor-styles'
 // import './style.css';
 
 export default function BlockExample({ block }) {
-  console.log(block)
   return (
     <div className="sb-block-example">
       <EditorStyles />

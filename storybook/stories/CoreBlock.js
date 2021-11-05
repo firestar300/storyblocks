@@ -6,7 +6,6 @@ import coreBlocks from '../coreBlocks'
 
 coreBlocks.forEach((blockSlug) => {
   const blockType = getBlockType(blockSlug)
-  console.log(blockSlug, blockType)
 
   if (typeof blockType !== 'undefined') {
     const stories = storiesOf(`Core/${blockType.title}`, module)
