@@ -1,39 +1,30 @@
 import PropTypes from 'prop-types'
 import { useState } from '@wordpress/element'
-import {
-  BlockEditorProvider,
-  BlockList,
-  BlockEditorKeyboardShortcuts,
-  WritingFlow,
-  ObserveTyping,
-} from '@wordpress/block-editor'
-import { SlotFillProvider, DropZoneProvider, Popover } from '@wordpress/components'
+import { BlockEditorProvider, BlockList, BlockTools, WritingFlow, ObserveTyping } from '@wordpress/block-editor'
+import { SlotFillProvider, Popover } from '@wordpress/components'
 
 export function Editor({ initialBlocks }) {
-  const [blocks, setBlocks] = useState(initialBlocks)
+  console.log(initialBlocks)
+  const [blocks, updateBlocks] = useState([initialBlocks])
+
   return (
     <div className="editor-styles-wrapper">
-      <SlotFillProvider>
-        <DropZoneProvider>
-          <BlockEditorProvider
-            value={blocks}
-            onChange={setBlocks}
-            onInput={setBlocks}
-            settings={{
-              templateLock: 'all',
-            }}
-          >
-            <Popover.Slot name="block-toolbar" />
-            <BlockEditorKeyboardShortcuts />
+      <BlockEditorProvider
+        value={blocks}
+        onInput={(blocks) => updateBlocks(blocks)}
+        onChange={(blocks) => updateBlocks(blocks)}
+      >
+        <SlotFillProvider>
+          <BlockTools>
             <WritingFlow>
               <ObserveTyping>
                 <BlockList />
               </ObserveTyping>
             </WritingFlow>
-          </BlockEditorProvider>
-        </DropZoneProvider>
-        <Popover.Slot />
-      </SlotFillProvider>
+          </BlockTools>
+          <Popover.Slot />
+        </SlotFillProvider>
+      </BlockEditorProvider>
     </div>
   )
 }
