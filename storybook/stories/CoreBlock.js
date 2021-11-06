@@ -17,10 +17,8 @@ coreBlocks.forEach((blockSlug) => {
           stories.add(style.label, () => <Block block={blockType} />)
         })
       } else {
-        stories.add('View', () => <Block block={blockType} />)
+        stories.add('Default', () => <Block block={blockType} />)
       }
     }
-
-    stories.add('Editor', () => <BlockEditor block={blockType} />)
   }
 })

@@ -4,7 +4,7 @@ import { BlockEditorProvider, BlockList, BlockTools, WritingFlow, ObserveTyping 
 import { SlotFillProvider, Popover } from '@wordpress/components'
 
 export function Editor({ initialBlocks }) {
-  console.log(initialBlocks)
+  // console.log(initialBlocks)
   const [blocks, updateBlocks] = useState([initialBlocks])
 
   return (
