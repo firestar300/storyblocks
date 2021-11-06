@@ -1,6 +1,6 @@
 {
   "name": "storybook-gutenberg",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A Storybook boilerplate that lists the core blocks of WordPress Gutenberg editor.",
   "main": "index.js",
   "repository": "git@github.com:firestar300/storybook-gutenberg.git",
