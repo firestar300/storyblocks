@@ -57,7 +57,6 @@ async function rewritePackage(options) {
   if (fs.existsSync(`${options.applicationDirectory}/package.json`)) {
     const file = require(`${options.applicationDirectory}/package.json`);
     delete(file.bin)
-    delete(file.devDependencies)
 
     fs.writeFile(`${options.applicationDirectory}/package.json`, JSON.stringify(file, null, 2), function writeJSON(err) {
       if (err) return console.log(err);
