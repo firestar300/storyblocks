@@ -1,5 +1,5 @@
 {
-  "name": "@firestar300/storyblocks",
+  "name": "@firestqr/storyblocks",
   "version": "0.0.3",
   "description": "A Storybook boilerplate that lists the core blocks of WordPress Gutenberg editor.",
   "main": "index.js",
