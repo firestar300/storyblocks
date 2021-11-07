@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.0.5
+- Fix CLI command
+
+## 0.0.4
+- Add CLI command
+
 ## 0.0.3
 - Add CHANGELOG.md
 - Fix block example preview

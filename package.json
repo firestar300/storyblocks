@@ -1,6 +1,6 @@
 {
   "name": "@firestqr/storyblocks",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A Storybook boilerplate that lists the core blocks of WordPress Gutenberg editor.",
   "main": "index.js",
   "bin": {
