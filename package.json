@@ -84,5 +84,8 @@
     "use-local-storage-state": "^11.0.0",
     "webpack": "5.35.0",
     "webpack-merge": "^5.8.0"
+  },
+  "volta": {
+    "node": "12.22.12"
   }
 }
